@@ -8,7 +8,7 @@
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @class BootstrapitaThemePlugin
- * @ingroup plugins_themes_default
+ * @ingroup plugins_themes_bootstrapita
  *
  * @brief Bootstrapita theme
  */

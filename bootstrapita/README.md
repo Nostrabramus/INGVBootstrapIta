@@ -5,7 +5,7 @@
 ## Information
 This is a custom parent theme for the OJS 3 release. It is based on Bootstrap Italia framework.
 
-Developer: Abramo Tesoro, Simone Vecchi
+Developer: Abramo Tesoro
 
 ## Current release
 Current latest release is ready for production use

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @defgroup plugins_themes_default Default theme plugin
+ * @defgroup plugins_themes_bootstrapita Bootstrapita theme plugin
  */
  
 /**

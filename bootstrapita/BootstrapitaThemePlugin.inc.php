@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file plugins/themes/default/BootstrapitaThemePlugin.inc.php
+ * @file plugins/themes/bootstrapita/BootstrapitaThemePlugin.inc.php
  *
  * Copyright (c) 2021-2022 Abramo Tesoro
  * Copyright (c) 2021-2022 Simone Vecchi

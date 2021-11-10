@@ -19,5 +19,3 @@
 require_once('BootstrapitaThemePlugin.inc.php');
 
 return new BootstrapitaThemePlugin();
-
-

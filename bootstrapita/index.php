@@ -8,7 +8,6 @@
  * @file plugins/themes/bootstrapita/index.php
  *
  * Copyright (c) 2021-2022 Abramo Tesoro
- * Copyright (c) 2021-2022 Simone Vecchi
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @ingroup plugins_themes_bootstrapita

@@ -22,7 +22,9 @@ class BootstrapitaThemePlugin extends ThemePlugin {
 	 * @return null
 	 */
 	public function init() {
+		$this->addStyle('bootstrap-italia', 'css/bootstrap-italia.min.css');
 		$this->addStyle('my-custom-style', 'css/style.css');
+		$this->addScript('bootstrap-italia', 'js/bootstrap-italia.bundle.min.js');
 		$this->addScript('my-javascript', 'js/main.js');
 	}
 

@@ -19,6 +19,6 @@ Current latest release is ready for production use
 The BootstrapItalia theme is licensed under GPLv3. 
 
 ## Documentation
-OJS Theme API: https://docs.pkp.sfu.ca/pkp-theming-guide/en/theme-api
-Bootstrap 4.5: https://getbootstrap.com/docs/4.5/getting-started/introduction/
-Bootstrap Italia: https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/ 
+- OJS Theme API: https://docs.pkp.sfu.ca/pkp-theming-guide/en/theme-api
+- Bootstrap 4.5: https://getbootstrap.com/docs/4.5/getting-started/introduction/
+- Bootstrap Italia: https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/ 

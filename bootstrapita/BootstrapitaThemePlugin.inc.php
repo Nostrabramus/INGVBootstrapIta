@@ -22,10 +22,14 @@ class BootstrapitaThemePlugin extends ThemePlugin {
 	 * @return null
 	 */
 	public function init() {
+		// Add css styles for this theme
 		$this->addStyle('bootstrap-italia', 'css/bootstrap-italia.min.css');
 		$this->addStyle('my-custom-style', 'css/style.css');
+		// Add javascript libraries for this theme
 		$this->addScript('bootstrap-italia', 'js/bootstrap-italia.bundle.min.js');
 		$this->addScript('my-javascript', 'js/main.js');
+		// Add navigation menu areas for this theme
+		$this->addMenuArea(array('primary', 'user', 'footer'));
 	}
 
 	/**

@@ -28,29 +28,31 @@
 					{continue}
 				{/if}
 				{if $navigationMenuItemAssignment->navigationMenuItem->getIsChildVisible()}
-					 <div class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-							{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
-						</a>
-					  <div class="dropdown-menu">
-						<div class="row">
-						  <div class="col-12">
-							<div class="link-list-wrapper">
-								<ul class="link-list">
-								{foreach key=childField item=childNavigationMenuItemAssignment from=$navigationMenuItemAssignment->children}
-									{if $childNavigationMenuItemAssignment->navigationMenuItem->getIsDisplayed()}
-									<li>
-										<a class="list-item" href="{$childNavigationMenuItemAssignment->navigationMenuItem->getUrl()}">
-											{$childNavigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
-										</a>
-									</li>
-									{/if}
-								{/foreach}
-								</ul>
+					<div class="it-header-slim-right-zone">
+						<div class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
+								{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
+							</a>
+							<div class="dropdown-menu">
+								<div class="row">
+									<div class="col-12">
+										<div class="link-list-wrapper">
+											<ul class="link-list">
+												{foreach key=childField item=childNavigationMenuItemAssignment from=$navigationMenuItemAssignment->children}
+													{if $childNavigationMenuItemAssignment->navigationMenuItem->getIsDisplayed()}
+														<li>
+															<a class="list-item" href="{$childNavigationMenuItemAssignment->navigationMenuItem->getUrl()}">
+																<span>{$childNavigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}</span>
+															</a>
+														</li>
+													{/if}
+												{/foreach}
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
-						  </div>
 						</div>
-					  </div>
 					</div>
 				{else}
 					<li><a class="list-item" href="{$navigationMenuItemAssignment->navigationMenuItem->getUrl()}">{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}</a></li>

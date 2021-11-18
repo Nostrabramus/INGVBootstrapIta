@@ -8,6 +8,13 @@
 	.navbar .navbar-collapsable .navbar-nav li.nav-item {
     	position: relative;
 	}
+	.it-header-slim-wrapper .it-header-slim-wrapper-content .nav-mobile ul.link-list {
+		height: auto !important;
+		display: block;
+	}
+	.link-list-wrapper ul li a span {
+		margin-right: 0;
+	}
 }
 
 .task_count {

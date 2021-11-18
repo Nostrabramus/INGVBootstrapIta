@@ -15,42 +15,49 @@
 
 {if $navigationMenu}
 	 {if $id|escape == "navigationUser"}
-		 <ul class="link-list">
-		 {foreach key=field item=navigationMenuItemAssignment from=$navigationMenu->menuTree}
-			 {if !$navigationMenuItemAssignment->navigationMenuItem->getIsDisplayed()}
-				{continue}
-			{/if}
-			{if $navigationMenuItemAssignment->navigationMenuItem->getIsChildVisible()}
-				 <div class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
-						{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
-					</a>
-				  <div class="dropdown-menu">
-					<div class="row">
-					  <div class="col-12">
-						<div class="link-list-wrapper">
-							<ul class="link-list">
-							{foreach key=childField item=childNavigationMenuItemAssignment from=$navigationMenuItemAssignment->children}
-								{if $childNavigationMenuItemAssignment->navigationMenuItem->getIsDisplayed()}
-								<li>
-									<a class="list-item" href="{$childNavigationMenuItemAssignment->navigationMenuItem->getUrl()}">
-										{$childNavigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
-									</a>
-								</li>
-								{/if}
-							{/foreach}
-							</ul>
+		 <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu1" role="button" aria-expanded="false" aria-controls="menu1">
+			 <span>Ente appartenenza/Owner</span>
+			 <svg class="icon">
+				 <use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-expand"></use>
+			 </svg>
+		 </a>
+		<div class="link-list-wrapper collapse" id="menu1">
+			<ul class="link-list">
+			 {foreach key=field item=navigationMenuItemAssignment from=$navigationMenu->menuTree}
+				 {if !$navigationMenuItemAssignment->navigationMenuItem->getIsDisplayed()}
+					{continue}
+				{/if}
+				{if $navigationMenuItemAssignment->navigationMenuItem->getIsChildVisible()}
+					 <div class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
+							{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
+						</a>
+					  <div class="dropdown-menu">
+						<div class="row">
+						  <div class="col-12">
+							<div class="link-list-wrapper">
+								<ul class="link-list">
+								{foreach key=childField item=childNavigationMenuItemAssignment from=$navigationMenuItemAssignment->children}
+									{if $childNavigationMenuItemAssignment->navigationMenuItem->getIsDisplayed()}
+									<li>
+										<a class="list-item" href="{$childNavigationMenuItemAssignment->navigationMenuItem->getUrl()}">
+											{$childNavigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}
+										</a>
+									</li>
+									{/if}
+								{/foreach}
+								</ul>
+							</div>
+						  </div>
 						</div>
 					  </div>
 					</div>
-				  </div>
-				</div>
-			{else}
-	 			<li><a class="list-item" href="{$navigationMenuItemAssignment->navigationMenuItem->getUrl()}">{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}</a></li>
-	 		{/if}
-			 	
-		 {/foreach}
-		</ul>
+				{else}
+					<li><a class="list-item" href="{$navigationMenuItemAssignment->navigationMenuItem->getUrl()}">{$navigationMenuItemAssignment->navigationMenuItem->getLocalizedTitle()}</a></li>
+				{/if}
+			 {/foreach}
+			</ul>
+		</div>
 	 {else}
 		 <ul id="{$id|escape}" class="{$ulClass|escape} ">
 			{foreach key=field item=navigationMenuItemAssignment from=$navigationMenu->menuTree}

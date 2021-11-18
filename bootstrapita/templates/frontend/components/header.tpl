@@ -23,9 +23,6 @@
 {if !$pageTitleTranslated}{capture assign="pageTitleTranslated"}{translate key=$pageTitle}{/capture}{/if}
 {include file="frontend/components/headerHead.tpl"}
 <body class="pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if}" dir="{$currentLocaleLangDir|escape|default:"ltr"}">
-
-	
-
 		{* Header *}
 		<header class="it-header-wrapper it-header-sticky" id="headerNavigationContainer" role="banner">
 			<div class="it-header-slim-wrapper">
@@ -33,17 +30,13 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="it-header-slim-wrapper-content">
+								<a class="d-none d-lg-block navbar-brand" href="#">&nbsp;</a>
 								<div class="nav-mobile">
 									<nav>
-									  <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu1" role="button" aria-expanded="false" aria-controls="menu1">
-										<svg class="icon">
-										  <use xlink:href="/plugins/themes/bootstrapita/svg/sprite.svg#it-expand"></use>
-										</svg>
-									  </a>
+										{load_menu name="user" id="navigationUser" ulClass="link-list" liClass="list-item"}
 									</nav>
-								  </div>
+								</div>
 								<div class="it-header-slim-right-zone">
-									{load_menu name="user" id="navigationUser" ulClass="link-list" liClass="list-item"}
 								</div>
 							</div>
 						</div>
@@ -58,7 +51,7 @@
 								<div class="it-header-center-content-wrapper">
 									<div class="it-brand-wrapper">
 										<a href="#">
-											<a href="{$homeUrl}"><img src="{$baseUrl}/plugins/themes/bootstrapita/images/pageHeaderLogoImage_en_US.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="640" height="250" />
+											<a href="{$homeUrl}"><img src="{$baseUrl}/plugins/themes/bootstrapita/images/LogoImage.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="auto" height="auto" />
 										
 											<div class="it-brand-text">
 												<h2 class="sr-only">Annals of Geophysics</h2>

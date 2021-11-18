@@ -51,7 +51,7 @@
 								<div class="it-header-center-content-wrapper">
 									<div class="it-brand-wrapper">
 										<a href="#">
-											<a href="{$homeUrl}"><img src="{$baseUrl}/plugins/themes/bootstrapita/images/LogoImage.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="auto" height="auto" />
+											<a href="{$homeUrl}"><img src="{$baseUrl}/plugins/themes/bootstrapita/images/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="auto" height="auto" />
 										
 											<div class="it-brand-text">
 												<h2 class="sr-only">Annals of Geophysics</h2>

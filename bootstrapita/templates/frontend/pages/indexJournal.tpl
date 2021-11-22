@@ -23,6 +23,21 @@
 		{call_hook name="Templates::Index::journal"}
 		<div class="row">
 			<div class="col-md-8">
+
+				<div class="it-carousel-wrapper it-carousel-landscape-abstract mb-5">
+					<div class="it-carousel-all owl-carousel">
+						<div class="it-single-slide-wrapper">
+							<img src="https://via.placeholder.com/777x400/ebebeb/808080/?text=Immagine2" title="img title" alt="imagealt">
+						</div>
+						<div class="it-single-slide-wrapper">
+							<img src="https://via.placeholder.com/777x400/ebebeb/808080/?text=Immagine2" title="img title" alt="imagealt">
+						</div>
+						<div class="it-single-slide-wrapper">
+							<img src="https://via.placeholder.com/777x400/ebebeb/808080/?text=Immagine2" title="img title" alt="imagealt">
+						</div>
+					</div>
+				</div>
+
 				{if !$activeTheme->getOption('useHomepageImageAsHeader') && $homepageImage}
 					<div class="row">
 						<div class="col-12">

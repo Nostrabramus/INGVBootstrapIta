@@ -50,8 +50,8 @@
 							<div class="col-12">
 								<div class="it-header-center-content-wrapper">
 									<div class="it-brand-wrapper">
-										<a href="#">
-											<a href="{$homeUrl}"><img src="{$baseUrl}/plugins/themes/bootstrapita/images/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="auto" height="auto" />
+										<a href="{$baseUrl}">
+											<img src="{$baseUrl}/plugins/themes/bootstrapita/images/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="auto" height="auto" />
 											<div class="it-brand-text">
 												<h2 class="sr-only">Annals of Geophysics</h2>
 												<h3 class="sr-only">
@@ -78,6 +78,7 @@
 										</svg>
 									  </button>
 									  <div class="navbar-collapsable" id="nav1" style="display: none;">
+										<div class="overlay" style="display: none;"></div>
 										<div class="overlay" style="display: none;"></div>
 										<div class="close-div sr-only">
 										  <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>

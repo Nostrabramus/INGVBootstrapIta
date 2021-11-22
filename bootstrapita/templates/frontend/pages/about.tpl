@@ -12,14 +12,28 @@
  *}
 {include file="frontend/components/header.tpl" pageTitle="about.aboutContext"}
 
-<div class="page page_about">
-	{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.aboutContext"}
-	<h1>
-		{translate key="about.aboutContext"}
-	</h1>
-	{include file="frontend/components/editLink.tpl" page="management" op="settings" path="context" anchor="masthead" sectionTitleKey="about.aboutContext"}
 
-	{$currentContext->getLocalizedData('about')}
-</div><!-- .page -->
+<main class="page page_about" style="padding-top: 0px;">
+	<div class="container my-4">
+		<div class="row">
+			<div class="col-12">
+				{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.aboutContext"}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<h1>
+					{translate key="about.aboutContext"}
+				</h1>
+				{include file="frontend/components/editLink.tpl" page="management" op="settings" path="context" anchor="masthead" sectionTitleKey="about.aboutContext"}
+
+				{$currentContext->getLocalizedData('about')}
+			</div>
+			<div class="col-md-4">
+				{include file="frontend/components/sidebar.tpl"}
+			</div>
+		</div>
+	</div>
+</main>
 
 {include file="frontend/components/footer.tpl"}

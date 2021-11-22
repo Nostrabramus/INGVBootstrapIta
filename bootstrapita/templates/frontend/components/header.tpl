@@ -79,7 +79,6 @@
 									  </button>
 									  <div class="navbar-collapsable" id="nav1" style="display: none;">
 										<div class="overlay" style="display: none;"></div>
-										<div class="overlay" style="display: none;"></div>
 										<div class="close-div sr-only">
 										  <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
 										</div>

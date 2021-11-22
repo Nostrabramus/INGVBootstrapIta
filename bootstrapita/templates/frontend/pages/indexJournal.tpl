@@ -88,15 +88,23 @@
 						</div><!-- .more -->
 					</section>
 				{/if}
+
+				{* Additional Homepage Content *}
+				{if $additionalHomeContent}
+					<div class="additional_content">
+						{$additionalHomeContent}
+					</div>
+				{/if}
+
+				{* Sidebars *}
+				{capture assign="sidebarCode"}{call_hook name="Templates::Common::Sidebar"}{/capture}
+				{if $sidebarCode}
+					<div class="pkp_structure_sidebar left" role="complementary" aria-label="{translate|escape key="common.navigation.sidebar"}">
+						{$sidebarCode}
+					</div><!-- pkp_sidebar.left -->
+				{/if}
 			</div>
 		</div>
-
-		{* Additional Homepage Content *}
-		{if $additionalHomeContent}
-			<div class="additional_content">
-				{$additionalHomeContent}
-			</div>
-		{/if}
 	</div>
 </main>
 

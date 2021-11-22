@@ -57,12 +57,12 @@
 
 				{* Latest issue *}
 				{if $issue}
-					<section class="current_issue">
+					<section class="section-content indice-fascicolo">
 						<a id="homepageIssue"></a>
 						<h2>
 							{translate key="journal.currentIssue"}
 						</h2>
-						<div class="current_issue_title">
+						<div class="">
 							{$issue->getIssueIdentification()|strip_unsafe_html}
 						</div>
 						{include file="frontend/objects/issue_toc.tpl" heading="h3"}

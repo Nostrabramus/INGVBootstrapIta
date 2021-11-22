@@ -16,3 +16,8 @@ msgstr "Bootstrap Italia Theme"
 
 msgid "plugins.themes.bootstrapita.description"
 msgstr "This theme implements the Bootstrap Italia WebKit"
+
+msgid "plugins.themes.bootstrapita.setup.contextSummary"
+msgstr "Journal Description"
+
+

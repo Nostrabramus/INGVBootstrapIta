@@ -19,3 +19,6 @@ msgstr "Tema di Bootstrap Italia"
 
 msgid "plugins.themes.bootstrapita.description"
 msgstr "Questo tema implementa il kit Bootstrap Italia"
+
+msgid "plugins.themes.bootstrapita.setup.contextSummary"
+msgstr "Descrizione della Rivista"

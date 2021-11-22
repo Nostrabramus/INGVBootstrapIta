@@ -30,6 +30,28 @@ class BootstrapitaThemePlugin extends ThemePlugin {
 		$this->addScript('my-javascript', 'js/main.js');
 		// Add navigation menu areas for this theme
 		$this->addMenuArea(array('primary', 'user', 'footer'));
+
+		$this->addOption('showDescriptionInJournalIndex', 'FieldOptions', [
+			'label' => __('plugins.themes.bootstrapita.setup.contextSummary'),
+			'options' => [
+				[
+					'value' => true,
+					'label' => __('plugins.themes.default.option.showDescriptionInJournalIndex.option'),
+				],
+			],
+			'default' => false,
+		]);
+		$this->addOption('useHomepageImageAsHeader', 'FieldOptions', [
+			'label' => __('plugins.themes.default.option.useHomepageImageAsHeader.label'),
+			'description' => __('plugins.themes.default.option.useHomepageImageAsHeader.description'),
+			'options' => [
+				[
+					'value' => true,
+					'label' => __('plugins.themes.default.option.useHomepageImageAsHeader.option')
+				],
+			],
+			'default' => false,
+		]);
 	}
 
 	/**
